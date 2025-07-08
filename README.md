@@ -1,8 +1,5 @@
 # Hana-association-mini
-This project generates simulated transactional data and applies association rule mining to identify common shopping patterns.
-# Association Rule Mining with Simulated Market Basket Data
-
-This mini-project demonstrates **Association Rule Mining** using simulated transaction data. We use the **Apriori algorithm** to uncover frequent itemsets and generate meaningful association rules based on customer shopping behavior.
+This mini-project demonstrates **Association Rule Mining** using simulated transaction data.The **Apriori algorithm** was used to uncover frequent itemsets and generate meaningful association rules based on customer shopping behavior.
 
 ---
 
@@ -62,7 +59,7 @@ Frequent Itemsets:
 - Generated **association rules** using:
   - Metric: `confidence`
   - Minimum confidence: **0.7**
-- We display the rules with their **support**, **confidence**, and **lift**.
+- The rules with their **support**, **confidence**, and **lift** were displayed.
 
 **Example Rule Output:**
 ```
