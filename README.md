@@ -67,17 +67,28 @@ Association Rules:
    antecedents consequents  support  confidence  lift
 0    (Butter)     (Bread)      0.3        0.75  1.25
 ```
+### Key Metrics Summary
+
+| **Metric**         | **What It Means**                                                                 |
+|--------------------|-----------------------------------------------------------------------------------|
+| **Antecedent**     | `(Butter)` — The rule is triggered when a customer buys Butter                    |
+| **Consequent**     | `(Bread)` — Then the rule suggests they are also likely to buy Bread              |
+| **Support = 0.3**  | 30% of all transactions included both Butter and Bread                            |
+| **Confidence = 0.75** | 75% of the time when customers buy Butter, they also buy Bread                  |
+| **Lift = 1.25**    | Customers who buy Butter are 1.25 times more likely to buy Bread than by chance   |
 
 ---
 
-##  Explained Rule
+---
+
+## Explained Rule
 
 **Rule Chosen:**
 > If a customer buys **Butter**, they are likely to also buy **Bread** with **75% confidence**.
 
 ---
 
-###  What this means in real life:
+### What this means in real life:
 Out of all the times customers bought **Butter**, **75% of those times**, they also bought **Bread**. This insight can be used by grocery stores to:
 
 - Place Bread and Butter close together.
@@ -86,7 +97,9 @@ Out of all the times customers bought **Butter**, **75% of those times**, they a
 
 ---
 
-###  Confidence:
+
+
+### Confidence:
 
 **Definition:**
 > Of the transactions that contain the **antecedent** (A), how many also contain the **consequent** (B)?
@@ -107,18 +120,15 @@ Transactions with both Butter and Bread: 3
 Confidence = 3 / 4 = 0.75 or 75%
 ```
 
-So, **75% of Butter buyers also bought Bread**.
-
 ---
 
-###  Why it matters:
+### Why it matters:
 High confidence suggests a strong association between the items. Retailers can leverage this information to:
 
 - Recommend products
 - Increase cross-selling
 - Strategically place items
 
----
 
 
 ##  Libraries Used
