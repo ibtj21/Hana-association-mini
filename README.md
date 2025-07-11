@@ -4,7 +4,7 @@ This mini-project demonstrates **Association Rule Mining** using simulated trans
 
 ---
 
-## Simulate Transaction Data
+## 1. Simulate Transaction Data
 
 - Created at least 10 fake transactions.
 - Each transaction contains **2–5 items** selected from a pool of at least **10 unique grocery items**.
@@ -28,7 +28,7 @@ This mini-project demonstrates **Association Rule Mining** using simulated trans
 
 ---
 
-## Analyze with Apriori Algorithm
+## 2. Analyze with Apriori Algorithm
 
 ### Data Processing
 
@@ -57,7 +57,7 @@ This mini-project demonstrates **Association Rule Mining** using simulated trans
 
 ---
 
-## Generate Rules & Interpret
+## 3. Generate Rules & Interpret
 
 ### Association Rules
 
