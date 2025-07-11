@@ -1,3 +1,4 @@
+
 # Hana-association-mini
 This mini-project demonstrates *Association Rule Mining* using simulated transaction data.The *Apriori algorithm* was used to uncover frequent itemsets and generate meaningful association rules based on customer shopping behavior.
 
@@ -26,7 +27,7 @@ for i, t in enumerate(transactions):
 ```
 
 *Sample Transaction Data output (10 total):*
-python
+```python
 [
     ['Bread', 'Milk'],
     ['Bread', 'Eggs', 'Cheese'],
@@ -39,7 +40,7 @@ python
     ['Bread', 'Butter', 'Apples'],
     ['Milk', 'Bread', 'Cheese', 'Eggs']
 ]
-
+```
 
 ---
 
@@ -53,7 +54,7 @@ The transaction data was transformed into a format suitable for analysis using `
   - One-hot encode the transaction data using pandas.
   - Each transaction is converted to a row with True/False values for each item.
 
-    ```python
+```python
 import pandas as pd
 
 # Convert transactions to one-hot encoded dataframe
@@ -90,6 +91,7 @@ frequent_itemsets.sort_values(by='support', ascending=False)
 * Frequent Itemsets Output:*
 
 Frequent Itemsets:
+```
     support         itemsets
 0      0.6          (Bread)
 1      0.4         (Butter)
@@ -101,7 +103,7 @@ Frequent Itemsets:
 7      0.3    (Bread, Milk)
 8      0.3   (Eggs, Cheese)
 9      0.3   (Milk, Cheese)
-
+```
 
 ---
 
@@ -111,7 +113,6 @@ Frequent Itemsets:
   - Metric: confidence
   - Minimum confidence: *0.7*
 - The rules with their *support, **confidence, and **lift* were displayed.
-
 
 ```python
 from mlxtend.frequent_patterns import association_rules
@@ -139,8 +140,6 @@ rules[['antecedents', 'consequents', 'support', 'confidence', 'lift']]
 
 ---
 
----
-
 ## Explained Rule
 
 *Rule Chosen:*
@@ -157,8 +156,6 @@ Out of all the times customers bought *Butter, **75% of those times, they also b
 
 ---
 
-
-
 ### Confidence:
 
 *Definition:*
@@ -167,7 +164,6 @@ Out of all the times customers bought *Butter, **75% of those times, they also b
 *Formula:*
 
 Confidence(A ⇒ B) = (Transactions with A and B) / (Transactions with A)
-
 
 *Applied to Our Rule:*
 
@@ -178,7 +174,6 @@ Transactions with Butter: 4
 Transactions with both Butter and Bread: 3  
 
 Confidence = 3 / 4 = 0.75 or 75%
-
 
 ---
 
